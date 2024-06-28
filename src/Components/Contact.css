@@ -1,15 +1,17 @@
-.contact{
+.contact {
     margin: 80px auto;
     max-width: 90%;
     display: flex;
     align-content: center;
     justify-content: space-between;
 }
-.contact-col{
+
+.contact-col {
     flex-basis: 48%;
-    color:#676767;
+    color: #676767;
 }
-.contact-col h3{
+
+.contact-col h3 {
     color: #000F38;
     font-weight: 500;
     font-size: 25px;
@@ -17,30 +19,33 @@
     align-items: center;
     margin-bottom: 20px;
 }
-.contact-col h3 img{
+
+.contact-col h3 img {
     width: 35px;
     margin-left: 10px;
 }
 
-.contact-col p{
+.contact-col p {
     max-width: 450px;
     list-style: 0.3;
 }
 
-.contact-col ul li{
+.contact-col ul li {
     display: flex;
     align-items: center;
     margin: 20px 0;
 }
-.contact-col ul li img{
+
+.contact-col ul li img {
     width: 25px;
     margin-right: 10px;
 }
 
-.contact form input, .contact form textarea{
+.contact form input,
+.contact form textarea {
     display: block;
     width: 100%;
-    background:rgba(18, 23, 255, 0.23);
+    background: rgba(18, 23, 255, 0.23);
     padding: 15px;
     border: 0;
     outline: 0;
@@ -50,10 +55,10 @@
     border-radius: 10px;
 }
 
-.contact-col span{
+.contact-col span {
     display: block;
     margin: 20px 0;
-    
+
 }
 
 
@@ -68,13 +73,12 @@
 
 @media (max-width:700px) {
 
-    .contact{
+    .contact {
         display: block;
     }
-    .contact-col{
+
+    .contact-col {
         padding: 20px;
     }
-    
+
 }
-
-

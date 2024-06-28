@@ -1,32 +1,35 @@
-.campus{
+.campus {
     margin: 80px auto;
     width: 90%;
     text-align: center;
 }
-.gallery{
+
+.gallery {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
 }
-.gallery img{
+
+.gallery img {
     width: 23%;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.gallery img:hover{
+.gallery img:hover {
     opacity: 0.7;
 }
 
 /*------------------------- media query ---------------------*/
 
 @media (max-width: 800px) {
- 
-    .gallery{
+
+    .gallery {
         flex-wrap: wrap;
     }
-    .gallery img{
+
+    .gallery img {
         width: 48%;
         margin-bottom: 25px;
     }

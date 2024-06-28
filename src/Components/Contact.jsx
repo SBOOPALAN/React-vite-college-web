@@ -35,27 +35,27 @@ const Contact = () => {
         if (Object.keys(tempErrors).length === 0) {
             setResult("Sending....");
             const formDataToSend = new FormData(event.target);
-        
+
             formDataToSend.append("access_key", "7784f7d1-f08f-4fe3-8101-254d13f3fe72");
-        
+
             const response = await fetch("https://api.web3forms.com/submit", {
-              method: "POST",
-              body: formDataToSend
+                method: "POST",
+                body: formDataToSend
             });
-        
+
             const data = await response.json();
-        
+
             if (data.success) {
-              setResult("Form Submitted Successfully");
-              event.target.reset();
-              setFormData({
-                name: '',
-                phone: '',
-                message: ''
-              });
+                setResult("Form Submitted Successfully");
+                event.target.reset();
+                setFormData({
+                    name: '',
+                    phone: '',
+                    message: ''
+                });
             } else {
-              console.log("Error", data);
-              setResult(data.message);
+                console.log("Error", data);
+                setResult(data.message);
             }
         } else {
             setResult("Please fix the errors before submitting.");
@@ -65,25 +65,25 @@ const Contact = () => {
     return (
         <div className='contact'>
             <div className="contact-col">
-                <h3>Send us a message <img src="msg-icon.png" alt="" /></h3>
+                <h3>Send us a message <img src="/React-vite-college-web/public/msg-icon.png" alt="" /></h3>
                 <p>Feel free to reach through contact form or find our contact
                     information below. Your feedback, questions, and suggestions are
                     important to us as we strive to provide exceptional service to our
                     university community.</p>
                 <ul>
-                    <li> <img src="mail-icon.png" alt="" />Contact@AzarTech.dev</li>
-                    <li> <img src="phone-icon.png" alt="" />+91 9566655083</li>
-                    <li> <img src="location-icon.png" alt="" />77 Andavar Nagar Vip, Namakkal <br />Pn 637002, TamilNadu, India</li>
+                    <li> <img src="/React-vite-college-web/public/mail-icon.png" alt="" />Contact@AzarTech.dev</li>
+                    <li> <img src="/React-vite-college-web/public/phone-icon.png" alt="" />+91 9566655083</li>
+                    <li> <img src="/React-vite-college-web/public/location-icon.png" alt="" />77 Andavar Nagar Vip, Namakkal <br />Pn 637002, TamilNadu, India</li>
                 </ul>
             </div>
 
             <div className="contact-col">
                 <form onSubmit={onSubmit}>
                     <label>Your name</label>
-                    <input 
-                        type="text" 
-                        name='name' 
-                        placeholder='Enter your name' 
+                    <input
+                        type="text"
+                        name='name'
+                        placeholder='Enter your name'
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -91,10 +91,10 @@ const Contact = () => {
                     {errors.name && <span className="error">{errors.name}</span>}
 
                     <label>Phone Number</label>
-                    <input 
-                        type="tel" 
-                        name="phone" 
-                        placeholder='Enter your mobile number' 
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder='Enter your mobile number'
                         value={formData.phone}
                         onChange={handleChange}
                         required
@@ -102,17 +102,17 @@ const Contact = () => {
                     {errors.phone && <span className="error">{errors.phone}</span>}
 
                     <label>Write your messages here</label>
-                    <textarea 
-                        name="message" 
-                        rows="6" 
-                        placeholder='Enter your message' 
+                    <textarea
+                        name="message"
+                        rows="6"
+                        placeholder='Enter your message'
                         value={formData.message}
                         onChange={handleChange}
                         required></textarea>
                     {errors.message && <span className="error">{errors.message}</span>}
 
                     <button type='submit' className='btn dark-btn'>
-                        Submit now <img src="white-arrow.png" alt="" />
+                        Submit now <img src="/React-vite-college-web/public/white-arrow.png" alt="" />
                     </button>
                 </form>
                 <span>{result}</span>

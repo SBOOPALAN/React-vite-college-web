@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: 'React-vite-college-web',
+  base: 'react-vite-clg-web',
 });

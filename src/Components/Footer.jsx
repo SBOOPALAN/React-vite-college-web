@@ -4,12 +4,12 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-<p>@ 2024 AzarTech of group. All rights reserved.</p>
+      <p>@ 2024 AzarTech of group. All rights reserved.</p>
 
-<ul>
-    <li>Terms of Services</li>
-    <li>Privacy Policy</li>
-</ul>
+      <ul>
+        <li>Terms of Services</li>
+        <li>Privacy Policy</li>
+      </ul>
     </div>
   )
 }

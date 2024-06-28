@@ -14,24 +14,24 @@ import Video from './Components/Video'
 
 const App = () => {
 
-  const [playState, setPlayState]= useState(false);
+  const [playState, setPlayState] = useState(false);
 
   return (
     <div>
-      <Navbar/>
-      <Hero/>
+      <Navbar />
+      <Hero />
       <div className='container'>
-        <Title subTitle='OUR PROGRAM' title='What We Offer'/>
-      <Programs/>
-      <About setPlayState={setPlayState}/>
-      <Title subTitle='Gallery' title='Campus Photos'/>
-      <Campus/>
-      <Title subTitle='TESTIMONIALS'title='what Student Says'/>
-         <Testimonials/>
-         <Title subTitle='Contact Us'title='Det in Touch'/>
-         <Contact/>
-         <Footer/>
-         <Video playState={playState} setPlayState={setPlayState}/>
+        <Title subTitle='OUR PROGRAM' title='What We Offer' />
+        <Programs />
+        <About setPlayState={setPlayState} />
+        <Title subTitle='Gallery' title='Campus Photos' />
+        <Campus />
+        <Title subTitle='TESTIMONIALS' title='what Student Says' />
+        <Testimonials />
+        <Title subTitle='Contact Us' title='Det in Touch' />
+        <Contact />
+        <Footer />
+        <Video playState={playState} setPlayState={setPlayState} />
       </div>
 
     </div>

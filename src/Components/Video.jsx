@@ -12,7 +12,7 @@ const Video = ({ playState, setPlayState }) => {
 
   return (
     <div className={`video ${playState ? '' : 'hide'}`} ref={Player} onClick={closePlayer}>
-      <video src='college-video.mp4' autoPlay={true} muted controls></video>
+      <video src="/React-vite-college-web/public/college-video.mp4" autoPlay={true} muted controls></video>
     </div>
   )
 }

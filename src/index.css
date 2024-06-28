@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,24 +8,24 @@
 
 }
 
-body{
+body {
   background: #f5f5f5;
 }
 
-a{
+a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
   line-height: 1;
   cursor: pointer;
 }
 
-.container{
+.container {
   padding-left: 10%;
   padding-right: 10%;
 
 }
 
-.btn{
+.btn {
   background: #FFF;
   color: #212121;
   padding: 14px 25px;
@@ -39,29 +39,30 @@ a{
   justify-content: center;
 }
 
-.btn:hover{
- background-color: rgb(0, 255, 0);
+.btn:hover {
+  background-color: rgb(0, 255, 0);
 }
-.btn img{
+
+.btn img {
   width: 20px;
   margin-left: 10px;
 }
 
-.btn.dark-btn{
+.btn.dark-btn {
   background: #212EA0;
   color: #fff;
 }
 
 /*--------------------- media query ----------------*/
 
-@media(max-width:1200px){
-  .container{
+@media(max-width:1200px) {
+  .container {
     padding-left: 5%;
     padding-right: 5%;
   }
 
-  .btn{
+  .btn {
     padding: 14px 22px;
-    
+
   }
 }
