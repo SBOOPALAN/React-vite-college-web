@@ -8,7 +8,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+     "deploy": "vite gh-pages"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -24,6 +24,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "gh-pages": "^6.1.1",
-    "vite": "^5.3.1"
+    "vite": "^5.3.1",
+    "vite-plugin-gh-pages": "^0.4.1"
   }
 }

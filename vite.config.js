@@ -1,8 +1,8 @@
-
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import ghPages from 'vite-plugin-gh-pages'
 
 export default defineConfig({
-  plugins: [react()],
-  base: 'react-vite-clg-web',
-});
+  plugins: [react(), ghPages()],
+  base: 'react-vite-clg-web' 
+})
